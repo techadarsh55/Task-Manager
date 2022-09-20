@@ -1,0 +1,59 @@
+{%extends 'master.html'%}
+{% load static %}
+
+{%block body%}
+<body>
+<div class="container m-3">
+    <div class="card bg-danger mt-2 col-8 text-center">
+        <h3 class="text-light">Create Task</h3>
+    </div>
+    <div class="row">
+        <div class="col-8 ">
+            
+            <form class="form-control" method="post">
+                {% csrf_token %}
+                <div class="containet">
+                    <table class="table">
+                        <tr>
+                            <td>{{form.as_table}}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Add Task" class="btn btn-danger col-8">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <span><p></p></span>
+            </form>
+            <script>
+                function myFunction() {
+                    var txt;
+                    if (confirm("you want to add task ?")) {
+                      txt = "Task Created Successfully..!!";
+                      window.alert(txt)
+                    
+                    } else {
+                      txt = "Task not created..!!";
+                      window.alert(txt)
+                    }
+                    
+                  }
+            </script>
+        
+        </div>
+        <div class="col-4">
+            <div class="card card-body d-flex">
+                <h3 class="text-center">You Created Task</h3>
+                <hr>
+                <button class="btn btn-outline-primary ">Views</button><br>
+                <button class="btn btn-outline-success ">Search</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+{%endblock%}

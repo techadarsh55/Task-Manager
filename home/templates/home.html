@@ -1,0 +1,122 @@
+{%extends 'master.html'%}
+{% load static %}
+{% block body %}
+<body class="bg-light">
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-8">
+                <div class="card card-body">
+                    <h4 class="title text-capitalize">hey Adarsh good morning !!</h4>
+                    <p class="text-capitalize">don't forget to login</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><h5>Adarsh Admane</h5></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="login">
+                                    <label for="vehicle1"> I'm Login </label>
+                                    <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                <input type="submit" class="btn btn-outline-danger" value="Sign In">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-4">
+                <div class="card card-body">
+                    <h4>You have total task is:</h4>
+                    <h4 class="text-success">45</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-3">
+        <div class="row mt-3">
+            <div class="col-8 auto">
+                <div class="card card-body">
+                    <h4 class="title text-capitalize">Notifications</h4>
+                  
+                    <hr>
+                    <table>
+                        <tr>
+                            <td>
+                                <h5 class="text-capitalize text-bg-danger">new assignment</h5>
+                                <p>
+                                    As discussed with you in the interview, please find below the small assignment.
+                                    Create a web app for daily tasks management using any frontend technology(Reactjs/Angular/HTML5) , Python/django and MySQL(or any db).
+                                </p>
+                                <button class="btn btn-outline-secondary">Views</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                <h5 class="text-capitalize text-bg-danger">new assignment</h5>
+                                <p>
+                                    As discussed with you in the interview, please find below the small assignment.
+                                    Create a web app for daily tasks management using any frontend technology(Reactjs/Angular/HTML5) , Python/django and MySQL(or any db).
+                                </p>
+                                <button class="btn btn-outline-secondary">Views</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                <h5 class="text-capitalize text-bg-danger">new assignment</h5>
+                                <p>
+                                    As discussed with you in the interview, please find below the small assignment.
+                                    Create a web app for daily tasks management using any frontend technology(Reactjs/Angular/HTML5) , Python/django and MySQL(or any db).
+                                </p>
+                                <button class="btn btn-outline-secondary">Views</button>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                                <h5 class="text-capitalize text-bg-danger">new assignment</h5>
+                                <p>
+                                    As discussed with you in the interview, please find below the small assignment.
+                                    Create a web app for daily tasks management using any frontend technology(Reactjs/Angular/HTML5) , Python/django and MySQL(or any db).
+                                </p>
+                                <button class="btn btn-outline-secondary">Views</button>
+                            </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-4 auto">
+                <div class="card card-body">
+                    <h4>Work Report</h4>
+                    <table class="table">
+                        <tr>
+                            <td><a class="nav-link text-success" href="#"><h5 class="">Completed</h5></a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="nav-link text-warning" href="#"><h5 class="">Pending</h5></a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="nav-link text-primary" href="#"><h5 class="">In progress</h5></a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="nav-link text-danger" href="#"><h5 class="">Issue</h5></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+{%endblock%}
